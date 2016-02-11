@@ -1,18 +1,13 @@
-.start {
-  background-color: green;
-  outline: none;
-  color: white;
-}
-
-.hours::after,
+/*.hours::after,
 .minutes::after {
   content: ":";
-}
+}*/
 
-.minutes {
-
-}
-
-.seconds {
-
+#clock {
+  height: 300px;
+  width: 300px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+  line-height: 300px;
 }
