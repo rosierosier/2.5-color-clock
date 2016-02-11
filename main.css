@@ -1,0 +1,18 @@
+.start {
+  background-color: green;
+  outline: none;
+  color: white;
+}
+
+.hours::after,
+.minutes::after {
+  content: ":";
+}
+
+.minutes {
+
+}
+
+.seconds {
+
+}
