@@ -29,18 +29,7 @@ function displayTime() {
 
   if(isHovering){
     color.textContent = hours.toString(16) + ":" + minutes.toString(16) + ":" + seconds.toString(16);
-    background.style.backgroundColor = 'pink';
   }
-
-
-
-  // if(isHovering){
-  //   ('#clock').animate( {
-  //     backgroundColor: 'pink'}, 10000)
-  //     .animate( {backgroundColor: 'blue'}, 1000);
-  //   }
-
-
 
 
 }
