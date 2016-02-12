@@ -20,16 +20,27 @@ function displayTime() {
     minutes = "0" + minutes;
   }
 
-  if (isHovering) {
-    console.log('hovering');
-  }
+  // if (isHovering) {
+  //   console.log('hovering');
+  // }
 
     document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
     var color = document.querySelector('#clock');
 
   if(isHovering){
     color.textContent = hours.toString(16) + ":" + minutes.toString(16) + ":" + seconds.toString(16);
+    background.style.backgroundColor = 'pink';
   }
+
+
+
+  // if(isHovering){
+  //   ('#clock').animate( {
+  //     backgroundColor: 'pink'}, 10000)
+  //     .animate( {backgroundColor: 'blue'}, 1000);
+  //   }
+
+
 
 
 }
@@ -47,11 +58,16 @@ setInterval(displayTime, 1000);
 
 
 function trackMouseOn() {
-  console.log('mouseon');
+  console.log('backgroundColor');
   isHovering = true;
+  var background = document.querySelector('#clock');
+  background.style.backgroundColor = 'pink';
 }
 
 function trackMouseOff() {
-  console.log('mouseleave');
+  // console.log('mouseleave');
   isHovering = false;
+  var background = document.querySelector('#clock');
+  background.style.backgroundColor = 'grey';
+
 }
