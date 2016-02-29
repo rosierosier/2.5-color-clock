@@ -7,11 +7,20 @@
   height: 300px;
   width: 300px;
   color: white;
-  background-color: turquoise;
+  /*background-color: turquoise;*/
   text-align: center;
   line-height: 300px;
   font-family: 'Andale Mono', sans-serif;
   font-size: 50px;
+  position: relative;
 
+}
 
+hr {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  width: 200px;
+  margin: 0 auto;
+  color: white;
 }
