@@ -62,14 +62,14 @@ setInterval(displayTime, 1000);
 
 function trackMouseOn() {
   // console.log('backgroundColor');
-  // isHovering = true;
+  isHovering = true;
   // var background = document.querySelector('#clock');
   // background.style.backgroundColor = 'pink';
 }
 
 function trackMouseOff() {
   // console.log('mouseleave');
-  // isHovering = false;
+  isHovering = false;
   // var background = document.querySelector('#clock');
   // background.style.backgroundColor = 'grey';
 
