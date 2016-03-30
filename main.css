@@ -7,7 +7,7 @@
   height: 300px;
   width: 300px;
   color: white;
-  /*background-color: turquoise;*/
+  /*background-color: rgba(255, 255, 255, 0.7);*/
   text-align: center;
   line-height: 300px;
   font-family: 'Andale Mono', sans-serif;
@@ -23,4 +23,15 @@ hr {
   width: 200px;
   margin: 0 auto;
   color: white;
+}
+
+#clock-color {
+  height: 300px;
+  width: 300px;
+  color: white;
+  /*background-color: turquoise;*/
+  text-align: center;
+  line-height: 300px;
+  position: relative;
+  display: inline-block;
 }

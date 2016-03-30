@@ -26,21 +26,42 @@ function displayTime() {
     color.textContent = hours.toString(16) + ":" + minutes.toString(16) + ":" + seconds.toString(16);
   }
 
+
   var hexHours = hours.toString(16);
   var hexMinutes = minutes.toString(16);
   var hexSeconds = seconds.toString(16);
-  // console.log(hexHours, hexMinutes, hexSeconds);
-  var backgroundColorChange = '#' + hours.toString(16) + minutes.toString(16) + seconds.toString(16);
+
+
+  // console.log(hexHours);
+  if (hexHours.length == 1) {
+    hexHours = hexHours + hexHours;
+    console.log(hexHours);
+  }
+  if (hexMinutes.length == 1){
+    hexMinutes = hexMinutes + hexMinutes;
+    console.log(hexMinutes);
+  }
+  if (hexSeconds.length == 1){
+    hexSeconds = hexSeconds + hexSeconds;
+    console.log(hexSeconds);
+  }
+
   // if (hexHours > 10 && hexHours < 16) {
-  //   hexHours = "0" + hexHours;
-  // }
-  // if (hexMinutes > 10 && hexMinutes < 16) {
-  //   hexMinutes = "0" + hexMinutes;
-  // }
-  // if (hexSeconds >10 && hexSeconds < 16) {
-  //   hexSeconds = "0" + hexSeconds;
-  // }
-  // console.log(hexSeconds);
+  //     hexHours = hours.toString(16) + hours.toString(16);
+  //     console.log("hours less than 10 and greater than 16");
+  //   }
+  //   if (hexMinutes > 10 && hexMinutes < 16) {
+  //     hexMinutes = minutes.toString(16) + minutes.toString(16);
+  //     console.log("minutes less than 10 and greater than 16");
+  //   }
+  //   if (hexSeconds > 10 && hexSeconds < 16) {
+  //     hexSeconds = seconds.toString(16) + seconds.toString(16);
+  //     console.log("seconds less than 10 and greater than 16");
+  //   }
+
+    console.log(hexHours, hexMinutes, hexSeconds);
+  var backgroundColorChange = "#" + hexHours + hexMinutes + hexSeconds;
+
   console.log(backgroundColorChange);
 
   function changeColor() {
